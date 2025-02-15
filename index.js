@@ -17,7 +17,7 @@ function incomeTex(income, expance){
 // console.log(output)
 
 
-// problem solving -  2
+// problem solving -  2  
 
 function AddEmail(email){
 
