@@ -1,4 +1,4 @@
-// problem number - 1 
+// // problem number - 1 
 
 function bazarHishab(totalMoeny, morich, mach, shobji) {
     const cost = morich + mach + shobji;
@@ -35,7 +35,7 @@ const patriList = ["rahima", "sokina", "borsha", "apa", "morjina", "reshma", "ka
 const newPatriList = findHena(patriList);
 console.log(newPatriList)
 
-// problem number - 3
+// // // problem number - 3
 
 function sendProposal(heroBio, patriBio) {
     
@@ -72,7 +72,7 @@ const status = sendProposal(heroBioData, henaBioData);
 console.log(status)
 
 
-// problem number - 4
+// // problem number - 4
 
 
 
