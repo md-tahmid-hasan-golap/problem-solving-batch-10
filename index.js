@@ -1,36 +1,126 @@
-// problem solving -  1
+// problem number - 1 
 
-function incomeTex(income, expance){
+function bazarHishab(totalMoeny, morich, mach, shobji) {
+    const cost = morich + mach + shobji;
+    const sum = totalMoeny - cost;
+    return sum;
+}
 
-    if(typeof income !== "number" || income < 0 || typeof expance !== "number" || expance < 0){
-        return "invalid input"
+const totalMoeny = 500;
+const morich = 100;
+const fish = 200;
+const shobji = 50;
+
+const restMoney = bazarHishab(totalMoeny, morich, fish, shobji);
+
+console.log(restMoney)
+
+
+// problem number - 2
+
+function findHena(list) {
+    let temp = [];
+    for (let i = 0; i < list.length; i++) {
+        const patriName = list[i]; 
+        if (patriName.includes("h")) {
+            temp.push(patriName)
+        }
     }
-    console.log(income, expance)
-    let textAmmount  = income - expance;
-    let tex = textAmmount * 0.2;
-    return tex
+    return temp;
 
 }
 
-// const output =  incomeTex(25000, 11000);
-// // const output =  incomeTex("jdjdjj", "hdhdh");
-// console.log(output)
+const patriList = ["rahima", "sokina", "borsha", "apa", "morjina", "reshma", "karishma", "hena"];
 
+const newPatriList = findHena(patriList);
+console.log(newPatriList)
 
-// problem solving -  2  
+// problem number - 3
 
-function AddEmail(email){
-
-    if(email.includes("@")){
-        return "invalid number"
+function sendProposal(heroBio, patriBio) {
+    
+    if (typeof heroBio ==="object" && typeof patriBio ==="object" && !Array.isArray(heroBio)) {
+        if (heroBio.district===patriBio.district) {
+            return "proposal done"
+        }
+        else {
+            return 'NOOOOOOOOOOO'
+        }
+    } else {
+       return "invalid input"
     }
-    let splite = email.sp
-    // console.log(splite)
-
-    let username = splite[0];
-    let domain = splite[1];
-    const NewSreing = username + " send a number " + domain;
-    return NewSreing
+    
 }
-const output = AddEmail("golap.ph@gmail.com");
-console.log(output)
+
+const heroBioData = {
+    name: "hero alom",
+    age: 20,
+    district: "dhaka",
+    fatherName: "Omuk",
+    email:"h@gmail.com"
+}
+
+const henaBioData = {
+    name: "hena",
+    age: 20,
+    district: "dhaka",
+    fatherName: "tomuk",
+    email:"hena@gmail.com"
+}
+
+const status = sendProposal(heroBioData, henaBioData);
+console.log(status)
+
+
+// problem number - 4
+
+
+
+function removeDuplicate(mainList) {
+    let newDawatList = [];
+    for (const relative of mainList) {
+        let isUnique = true;
+        for (const newRelative of newDawatList) {
+            if (relative.name===newRelative.name && relative.member===newRelative.member) {
+                isUnique = false;
+                break;
+            }
+        }
+        if (isUnique) {
+            newDawatList.push(relative)
+        }
+    }
+    return newDawatList;
+}
+
+
+const relatives = [
+    { name: "Alice", member: 1 },
+    { name: "Bob", member: 2 },
+    { name: "Charlie", member: 3 },
+    { name: "Alice", member: 1 },
+    { name: "David", member: 4 },
+    { name: "Eve", member: 5 },
+    { name: "Bob", member: 2 },
+    { name: "Frank", member: 6 },
+    { name: "Grace", member: 7 },
+    { name: "Alice", member: 1 }
+ ];
+
+const result = removeDuplicate(relatives);
+console.log(result)
+
+
+
+
+
+
+
+
+
+// let sumTotal = 0;
+// for (person of relatives) {
+//     sumTotal=sumTotal+person.member
+// }
+
+// console.log(sumTotal)
