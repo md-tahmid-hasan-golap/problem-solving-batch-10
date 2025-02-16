@@ -1,4 +1,4 @@
-// // problem number - 1 
+// // // problem number - 1 
 
 function bazarHishab(totalMoeny, morich, mach, shobji) {
     const cost = morich + mach + shobji;
@@ -14,6 +14,14 @@ const shobji = 50;
 const restMoney = bazarHishab(totalMoeny, morich, fish, shobji);
 
 console.log(restMoney)
+
+
+
+
+
+
+
+
 
 
 // problem number - 2
@@ -60,6 +68,9 @@ const heroBioData = {
     email:"h@gmail.com"
 }
 
+// const heroBioData = "goallp"
+        
+    
 const henaBioData = {
     name: "hena",
     age: 20,
@@ -83,7 +94,7 @@ function removeDuplicate(mainList) {
         for (const newRelative of newDawatList) {
             if (relative.name===newRelative.name && relative.member===newRelative.member) {
                 isUnique = false;
-                break;
+                continue;
             }
         }
         if (isUnique) {
@@ -124,3 +135,33 @@ console.log(result)
 // }
 
 // console.log(sumTotal)
+
+
+// function getUniqueRelatives(relatives) {
+//     let uniqueRelatives = [];
+//     let seenNames = new Set();
+    
+//     for (let relative of relatives) {
+//         if (!seenNames.has(relative.name)) {
+//             seenNames.add(relative.name);
+//             uniqueRelatives.push(relative);
+//         }
+//     }
+    
+//     return uniqueRelatives;
+// }
+
+// const relatives = [
+//    { name: "Alice", member: 1 },
+//    { name: "Bob", member: 2 },
+//    { name: "Charlie", member: 3 },
+//    { name: "Alice", member: 1 },
+//    { name: "David", member: 4 },
+//    { name: "Eve", member: 5 },
+//    { name: "Bob", member: 2 },
+//    { name: "Frank", member: 6 },
+//    { name: "Grace", member: 7 },
+//    { name: "Alice", member: 1 }
+// ];
+
+// console.log(getUniqueRelatives(relatives));
