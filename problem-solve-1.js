@@ -10,7 +10,7 @@ function TextCalculate(MonthlyIncome, Monthlyexpenses){
     return result
 
 }
-const output = TextCalculate('gghhjhj', 'uhgf');
-// const output = TextCalculate(10000, 3000);
+// const output = TextCalculate('gghhjhj', 'uhgf');
+const output = TextCalculate(10000, 3000);
 
 console.log(output)

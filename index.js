@@ -1,86 +1,92 @@
-// // // problem number - 1 
+// // // // problem number - 1 
 
-function bazarHishab(totalMoeny, morich, mach, shobji) {
-    const cost = morich + mach + shobji;
-    const sum = totalMoeny - cost;
-    return sum;
-}
+// function bazarHishab(totalMoeny, morich, mach, shobji) {
+//     const totalMoeny = 500;
+// const morich = 100;
+// const fish = 200;
+// const shobji = 50;
+//     const cost = morich + mach + shobji;
+//     const sum = totalMoeny - cost;
+//     return sum;
 
-const totalMoeny = 500;
-const morich = 100;
-const fish = 200;
-const shobji = 50;
+// }
 
-const restMoney = bazarHishab(totalMoeny, morich, fish, shobji);
+// const totalMoeny = 500;
+// const morich = 100;
+// const fish = 200;
+// const shobji = 50;
 
-console.log(restMoney)
+// const restMoney = bazarHishab(totalMoeny, morich, fish, shobji);
+// // const restMoney2 = bazarHishab(500, 100, 200, 50);
 
-
-
-
-
-
-
-
+// console.log(restMoney)
 
 
-// problem number - 2
 
-function findHena(list) {
-    let temp = [];
-    for (let i = 0; i < list.length; i++) {
-        const patriName = list[i]; 
-        if (patriName.includes("h")) {
-            temp.push(patriName)
-        }
-    }
-    return temp;
 
-}
 
-const patriList = ["rahima", "sokina", "borsha", "apa", "morjina", "reshma", "karishma", "hena"];
 
-const newPatriList = findHena(patriList);
-console.log(newPatriList)
 
-// // // problem number - 3
 
-function sendProposal(heroBio, patriBio) {
+
+
+// // problem number - 2
+
+// function findHena(list) {
+//     let temp = [];
+//     for (let i = 0; i < list.length; i++) {
+//         const patriName = list[i]; 
+//         if (patriName.includes("h")) {
+//             temp.push(patriName)
+//         }
+//     }
+//     return temp;
+
+// }
+
+// const patriList = ["rahima", "sokina", "borsha", "apa", "morjina", "reshma", "karishma", "hena"];
+
+// const newPatriList = findHena(patriList);
+// console.log(newPatriList)
+
+// // // // problem number - 3
+
+// function sendProposal(heroBio, patriBio) {
     
-    if (typeof heroBio ==="object" && typeof patriBio ==="object" && !Array.isArray(heroBio)) {
-        if (heroBio.district===patriBio.district) {
-            return "proposal done"
-        }
-        else {
-            return 'NOOOOOOOOOOO'
-        }
-    } else {
-       return "invalid input"
-    }
+//     if (typeof heroBio ==="object" && typeof patriBio ==="object" && !Array.isArray(heroBio)) {
+//         if (heroBio.district===patriBio.district) {
+//             return "proposal done"
+//         }
+//         else {
+//             return 'NOOOOOOOOOOO'
+//         }
+//     } else {
+//        return "invalid input"
+//     }
     
-}
+// }
 
-const heroBioData = {
-    name: "hero alom",
-    age: 20,
-    district: "dhaka",
-    fatherName: "Omuk",
-    email:"h@gmail.com"
-}
+// const heroBioData = {
+//     name: "hero alom",
+//     age: 20,
+//     district: "dhaka",
+//     fatherName: "Omuk",
+//     email:"h@gmail.com"
+// }
 
-// const heroBioData = "goallp"
+// // const heroBioData = "goallp"
         
     
-const henaBioData = {
-    name: "hena",
-    age: 20,
-    district: "dhaka",
-    fatherName: "tomuk",
-    email:"hena@gmail.com"
-}
+// const henaBioData = {
+//     name: "hena",
+//     age: 20,
+//     district: "dhaka",
+//     fatherName: "tomuk",
+//     email:"hena@gmail.com"
+// }
 
-const status = sendProposal(heroBioData, henaBioData);
-console.log(status)
+// const status = sendProposal(heroBioData, henaBioData);
+// console.log(status)
 
 
 // // problem number - 4
@@ -120,7 +126,6 @@ const relatives = [
 
 const result = removeDuplicate(relatives);
 console.log(result)
-
 
 
 
